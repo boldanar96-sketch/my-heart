@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>❤️ Валентины мэндчилгээ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgm" src="music.mp3"></audio>
+
+<!-- START -->
+<section id="start" class="active">
+  <h1>Өдрийн мэнд 😊</h1>
+  <p>Энд дарж мэндчилгээ эхлүүлэх үү?</p>
+  <button onclick="startShow()">Эхлүүлэх 💌</button>
+</section>
+
+<!-- TEXT -->
+<section id="texts">
+  <p class="fade">Хайрт Анар-Эрдэнэ чамдаа Валентины өдрийн мэнд ❤️</p>
+  <p class="fade">Миний аз жаргал, гэрэл гэгээ болдогт баярлалаа 🤍</p>
+  <button onclick="startGallery()">Энд дарж дурсамжаар аялах 💕</button>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <img id="photo" src="images/1.jpg">
+  <p>Дарахад дараагийн зураг гарна 📸</p>
+</section>
+
+<!-- FINAL -->
+<section id="final">
+  <h2>Бидний аялал дуусаагүй шүү 😘</h2>
+  <h3>To be continued…</h3>
+  <div class="emoji">🫂</div>
+</section>
+
+<!-- GIFTS -->
+<section id="gifts">
+  <h2>Бэлгээ мартаагүй шүү 🎁</h2>
+
+  <div class="gift" onclick="selectGift(this)">
+    <span class="icon">🧖‍♀️</span> Бүтэн биеийн массаж
+  </div>
+
+  <div class="gift" onclick="selectGift(this)">
+    <span class="icon">🍽️</span> Хоол (авуулах / хийж өгөх)
+  </div>
+
+  <div class="gift" onclick="selectGift(this)">
+    <span class="icon">🎬</span> Кино театр
+  </div>
+
+  <button onclick="finish()">Сонгосон 💌</button>
+</section>
+
+<!-- SURPRISE -->
+<section id="surprise">
+  <h1>Та азтай байлаа 😍</h1>
+  <h2>Анарболдыг давхар авлаа ❤️🫶🏻</h2>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
